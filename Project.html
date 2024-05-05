@@ -1,0 +1,750 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link ref="icon" href="favicon-32x32.png">
+    <title>Templates</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+        }
+        .Endimage{
+               width: 100%;
+               height: 250px;
+               margin: 2px;
+        }
+       .scroll{
+               width: 150px;
+               height: 250px;
+               margin-left: 30px;
+       }
+        .design{
+            height: 300px;
+            width: 300px;
+            background-color: black;
+            color: white;
+        }
+        .hgtless{
+            height: 100px;
+            width: 300px;
+            border-radius: 10px;
+        }
+        #imagebody{
+            height: 3700px;
+            width: 1300px;
+            /* background-color: black; */
+            margin: 90px;
+            margin-top: 30px;
+        }
+        #body1{
+            height: 3650px;
+            width: 300px;
+            /* background-color: antiquewhite; */
+            /* margin: 2px; */
+        }
+        #body2{
+            height: 3650px;
+            width: 300px;
+            /* background-color: red; */
+            margin: 2px;
+            margin-top: -3615px;
+            margin-left: 320px;
+        }
+        #body3{
+            height: 3650px;
+            width: 300px;
+            /* background-color:brown; */
+            margin: 2px;
+            margin-left: 319px;
+            margin-top: -3635px;
+        }
+        #body4{
+            height: 3650px;
+            width: 300px;
+            /* background-color: gray; */
+            margin: 2px;
+            margin-left: 320px;
+            margin-top: -3630px;
+        }
+        .ImageCommon{
+                 height: 150px;
+                 width: 300px;
+                 border-radius: 10px;
+        }
+        .mainsearch{
+            width: 600px;
+            height: 50px;
+            margin-left: 400px;
+            margin-top: 100px;
+        }
+        .search2{
+            width: 100px;
+            height: 50px;   
+            background-color: aliceblue;
+            /* position: relative;
+            top: -50px;
+            left: 400px; */
+            margin-top: -50px;
+            margin-left: 440px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 0px 8px 8px 0px;
+        }
+        input{
+            width: 450px;
+            height: 50px;
+            border: 0px;
+            outline: 0px;
+            font-size:20px;
+            border-radius: 8px 8px;
+        }    
+        input::placeholder{
+            font-size: 20px;
+        }
+        .header2{
+            display: flex;
+            /* align-items: center;*/
+            display: block ;
+            /* position: relative;
+            left:20px;
+            top:-40px; */
+            margin-top: -50px;
+            margin-left: 20px;
+        } 
+        .header{
+            width: 100%;
+            height: 120px;
+            background-color:rgb(85, 197, 85);
+            font-size: 100px;
+            font-weight: 200px;
+            background-size: 100% 120px;
+            background-image: url(grass.jpeg);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-repeat: no-repeat;
+            /* position: relative; */
+        }
+    .home{
+        display: flex;
+        align-items: center;
+        height: 50px;
+        text-decoration: none;
+    }
+        .search{
+            height: 400px;
+            width: 1400px;
+            margin-left: 20px;
+            background-color: rgb(20, 73, 20);
+            border-radius: 20px;
+            background-image: url(Table.avif);
+            background-size: 1400px 400px;
+            background-repeat: no-repeat;
+        }   
+        #span{
+            font-size: 20px;
+            background-color: red;
+            color: white;
+            display:flex;
+            align-items: last baseline;
+            /* margin-left: 120px; */
+        }
+        .sp{
+            margin-left: 120px;
+        }
+        #strong{
+            /* margin-left: 20px; */
+            font-size: 20px;
+        }  
+        #p1{
+            font-size: 20px;
+        }
+        #m{
+            color:red;
+            font-size: 50px;
+            margin-left: 70px;
+        }
+        .parent{
+            width:100%;
+            height:60px;
+            background-color: rgb(219, 219, 232);
+            text-align: center;
+            position: sticky;
+            top: 0px;
+        }
+        .parent ul{
+            display:inline-flex;
+            list-style: none;
+            font-style: 30px;
+        }
+        .parent ul li
+        {
+            padding: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        .hover:hover{
+            color:rgb(11, 11, 11);
+        }   
+        .list:hover
+        {
+            background-color: rgb(172, 169, 169);
+            border-radius: 20px;
+        }
+        .parent1{
+            display:none; 
+        }
+        .parent ul li:hover .parent1{
+            display: block;
+        }
+        .parent ul li:hover .parent1 ul{
+            display: block;
+            background-color:aliceblue;
+            position: absolute;
+            border-radius: 20px;
+            margin-left: 40px;
+        }
+        .list1:hover{
+            background-color:grey;
+            color: blue;
+            border-radius: 15px;
+        }
+        .parent2
+        {
+            display: none;
+        }
+        #abc:hover .parent2{
+            display: block;
+        }
+        #abc:hover .parent2 ul {
+            display:block;
+            background-color: rgb(239, 243, 239);
+            border-radius: 30px;
+            position:absolute;
+        }
+        .footer{
+            width: 100%;
+            height: 450px;
+            margin-top:50px;
+            background-color: rgb(192, 181, 181);
+           
+        }
+        .semiend{
+            width: 100%;
+            height: 300px;
+            color: aliceblue;
+            background-color: black;
+        }
+        .child1{
+            width: 300px;
+            height: 300px;
+           margin-left: 30px;
+           margin-top: 0px;
+           /* background-color: blue; */
+           font-size: 20px;
+           padding: 10px;
+        
+        }
+        .child2{
+            width: 250px;
+            height: 300px;
+           margin-left: 230px;
+           margin-top: -210px;
+           font-size: 20px;
+        }
+        .child3{
+            width: 400px;
+            height: 300px;
+            margin-left: 230px;
+           margin-top: -188px;
+           font-size: 20px;
+        }
+        .child4{
+            width: 400px;
+            height: 300px;
+            margin-left: 230px;
+           margin-top: -190px;
+           font-size: 20px;
+        }
+        .child5{
+            width: 300px;
+            height: 300px;
+            margin-left: 300px;
+           margin-top: -190px;
+           font-size: 20px;
+        }
+         .end{
+            width: 100%;
+             height: 100px;
+             background-color: rgb(22, 21, 21);
+             color: white;
+             display: flex;
+             align-items: center;
+         }
+        .spring{
+            font-size:50px;
+            /* position: relative;
+            top:-30px;
+            left:-100px; */
+            margin-top: -50px;
+            margin-left: -150px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        .spring1{
+            font-size: 50px;
+            /* position: relative;
+            left:-100px; */
+            margin-left: -70px;
+            color: white;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        #p{
+            color: white;
+        }
+        #h{
+            color:red;
+            margin-left: 500px;
+        }
+        #mad{
+            display: flex;
+            /* justify-items: center; */
+            align-items: center ;
+            /* position: relative;
+            top: 30px; */
+            margin: 50px;
+        }
+        #copyright{
+            margin-left: 100px;
+            font-size: 18px;
+        }
+        #icons{
+            /* word-spacing: 20px; */
+            font-size: 20px;
+            /* font-style: normal; */
+            margin-left: 30px;
+            margin-top: 0px;
+        }
+        em{
+            margin-top: 50px;
+            font-size: 30px;
+               }
+        .sublist1{
+            display: block;
+        }
+        .sublist2{
+            display: block;
+        }
+        .sublist3{
+            display: block;
+        }
+        .sublist4{
+            display: block;
+        }
+        .sublist5{
+            display: block;
+        } 
+    </style>
+</head>
+<body>
+    <div class="parent">
+        <ul>
+            <li class="list"><a href="#" class="hover"><img src="favicon-16x16.png" alt="" style="height: 30px;width: 30px;margin: -12px;border-radius: 0px;"> &nbsp&nbsp&nbsp<b>Nicepage</b></a>
+                <div class="parent1">
+                </div>
+            <li class="list"><a href="#" class="hover">Download</a>
+                <div class="parent1">
+                </div>
+            </li>
+            <li class="list"><a href="#" class="hover">400+Features</a>
+                <div class="parent1">
+                </div>           
+            </li>
+            <li class="list1"><a href="#" class="hover">10,000+Templates</a>
+                <div class="parent1">
+                    <ul>
+                        <li class="list1">Website Templates</li>
+                        <li class="list1">Website Designs</li>
+                        <li class="list1">WordPress Themes</li>
+                        <li class="list1">Joomla Templates</li>
+                        <li class="list1">HTML Templates</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list1"><a href="#" class="hover">Website Builders</a>
+                <div class="parent1">
+                    <ul>
+                        <li class="list1">HTML Website Builder</li>
+                        <li class="list1">WordPress Website Builder</li>
+                        <li class="list1">Joomla Page Builder</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list"><a href="#" class="hover">Premium</a>
+                <div class="parent1">
+                </div>
+            </li>
+            <li class="list"><a href="#" class="hover">Forums</a>
+                <div class="parent1">
+                </div>
+            </li>
+            <li class="list"><a href="#" class="hover">Blog</a>
+                <div class="parent1">
+                </div>
+            </li>
+            <li class="list1"><a href="#" class="hover">Help</a>
+                <div class="parent1">
+                    <ul>
+                        <li class="list1">Documentation</li>
+                        <li class="list1">Contact Support</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list1"><a href="#" class="hover">EN</a>
+                <div class="parent1">
+                    <ul>
+                        <li class="list1">EN</li>
+                        <li class="list1">DE</li>
+                        <li class="list1">NL</li>
+                        <li class="list1">FR</li>
+                        <li class="list1">IT</li>
+                        <li class="list1">ES</li>
+                        <li class="list1">PL</li>
+                        <li class="list1">PT</li>
+                        <li class="list1">TR</li>    
+                        <li class="list1">RU</li>
+                        <li class="list1">HU</li>
+                        <li class="list1">CS</li>
+                        <li class="list1">SV</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="list"><a href="#" class="hover">Sign In</a>
+                <div class="parent1">
+                </div>           
+            </li>
+            <li class="list"><a href="#" class="hover">Register</a>
+                <div class="parent1">
+                </div>           
+            </li>
+        </ul>
+    </div>
+    <div class="header"> 
+          <span class="spring">SPRING </span><sub><span class="spring1">SALES</span></sub>
+          <div class="header2">
+         <strong class="sp" id="strong">LIMITED TIME OFFER UPTO 50% OFF</strong><p class="sp" id="p1">Hurry up! offer is valid until jan 2nd</p>
+         <span id="span" class="sp">GET UPTO 50% OFF</span>
+        </div>
+         <p id="m">UP TO 50% OFF</p>
+        </div>
+    </div>
+    <div class="home">
+          &nbsp &nbsp &nbsp <a href="#">Home</a>&nbsp&nbsp/&nbsp&nbsp<a href="#">Templates</a>&nbsp&nbsp&nbsp/Wide
+    </div>
+
+
+    <div class="search">
+      <h1 id="h">Wide Templates</h1>
+      <div class="mainsearch">
+           <div class="search1">
+            <input type="text" placeholder="Enter Keywords">
+               <div class="search2">
+                  <i class="fa fa-search"></i>
+               </div>
+           </div>
+       </div>
+       <pre style="font-size: 20px;" id="mad">                      Free download of the best templates for multi-purpose websites. 
+                               Build responsive, fully customizable websites
+                               with an easy drag-n-drop templates builder.</pre > 
+</div>
+
+
+       <div id="imagebody">
+          <div id="body1">
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/18/31/template-183153.jpg" alt="Image1">
+            Broccoli Recipes
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/11/06/template-110691.jpg" alt="Image2">
+            About business Person
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/55/21/template-55210.jpg" alt="Image3">
+            Grape Farm
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/42/59/template-42592.jpg" alt="Image4">
+            Factory Work
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/10/91/template-109154.jpg" alt="Image5"> 
+            Business Driving Strategy
+            <img class="hgtless" src="https://images01.nicepagecdn.com/page/41/89/template-41892.jpg" alt="Image6">
+            Car Rankings Research Template
+            <div class="design"><pre><h1> 
+
+    Free Website 
+  Builder Software</h1>
+
+
+
+        <span id="span1" style="background-color: purple;font-size: 30px; border-radius: 3px;"> <a href="#" style="color: white;">Download</a> <span></pre></div>
+            <img class="ImageCommon" style="height: 200px;"src="https://images01.nicepagecdn.com/page/40/97/template-40979.jpg" alt="Image7">
+            Best courses in styling
+            <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/50/56/template-50567.jpg" alt="Image8">
+            Spring in Fashion Collection
+            <img class="ImageCommon" style="height: 100px;" src="https://images01.nicepagecdn.com/page/40/79/template-40797.jpg" alt="Image9">
+            Interior Protfolio
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/28/06/template-2806949.jpg" alt="Image10">
+            Learn From Anywhere Template
+            <div class="design" style="background-color: white;border: 2px solid black;border-radius: 8px;"><pre><h1 style="color: black;"> 
+    Free Website 
+  Builder Software</h1>
+            
+            
+            
+      <span id="span1" style="background-color: red;font-size: 30px; border-radius: 3px;"> <a href="#" style="color: white;">Download</a> <span></pre></div>
+        <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/30/13/template-301329.jpg" alt="Image11">
+        New Start Coming
+        <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/41/43/template-414382.jpg" alt="Image12">
+        Meet Our Pastors
+        <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/48/40/template-48404.jpg" alt="Image13">
+        Subtleties Of Production
+        <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/42/35/template-42354.jpg" alt="Image14">
+        About Design School
+        <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/31/58/template-3158315.jpg" alt="Image15">
+        Traditional Cooking Courses
+        <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/74/55/template-74550.jpg" alt="Image16">
+        Green Atelier
+        <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/55/06/template-550602.jpg" alt="Image17">
+        Eyeglass Trends
+            <div id="body2">
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/10/80/template-108068.jpg" alt="Image18">
+                Apps, Wearables, Websites
+                <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/24/79/template-2479969.jpg" alt="Image19">
+                Barbershop In New York
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/91/38/template-91389.jpg" alt="Image20">
+                Packaging Design
+                <img  class="ImageCommon" style="height: 100px;" src="https://images01.nicepagecdn.com/page/42/76/template-42765.jpg" alt="Image21">
+                Our Business Advantages 
+                <img class="ImageCommon" style="height:250px" src="https://images01.nicepagecdn.com/page/30/07/template-300794.jpg" alt="Image22">
+                Our Site Under Construction
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/28/06/template-2806949.jpg" alt="Image23">
+                Learn From Anywhere Template
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/73/37/template-73372.jpg" alt="Image24">
+                Wonders Flowers
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/21/12/template-2112676.jpg" alt="Image25">
+                Trends Queen
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/46/29/template-462904.jpg" alt="Image26">
+                Dogs Food
+                <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/60/80/template-608027.jpg" alt="Image27">
+                Tell Us About Yourself 
+                <img class="ImageCommon" style="height: 100px;" src="https://images01.nicepagecdn.com/page/43/73/template-43734.jpg" alt="Image28">
+                Exceptional Dental Care
+                <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/27/66/template-2766167.jpg" alt="Image29">
+                Eco Friendly Bags
+                <div class="design"><pre><h1> 
+
+    Customize Any
+        Template</h1>
+                
+                
+                
+        <span id="span1" style="background-color: purple;font-size: 30px; border-radius: 3px;"> <a href="#" style="color: white;">Download</a> <span></pre></div>
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/15/66/template-156698.jpg" alt="Image30">
+            Tea Shop Online Template
+            <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/10/99/template-109962.jpg" alt="Image31">
+            Men's Style And Fashion
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/72/93/template-729328.jpg" alt="Image32">
+            Live Music Design
+            <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/71/32/template-71322.jpg" alt="Image33">
+            Building The Future
+            <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/55/90/template-55909.jpg" alt="Image34">
+            Neon Photo
+            <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/43/32/template-43322.jpg" alt="Image35">
+            <div id="body3">
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/72/11/template-72110.jpg" alt="Image36">
+                Family Planning
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/11/01/template-110187.jpg" alt="Image37">
+                Beautiful Pots
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/52/57/template-52574.jpg" alt="Image38">
+                Techno Agency
+                <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/12/92/template-129276.jpg" alt="Image39">
+                Interesting Adventures
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/27/66/template-2766245.jpg" alt="Image40">
+                Chinese Tea House
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/21/30/template-2130555.jpg" alt="Image41">
+                The Experts For Real Estate
+                <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/47/56/template-47566.jpg" alt="Image42">
+                Indulge In Quality Living
+                <img class="ImageCommon"  src="https://images01.nicepagecdn.com/page/47/18/template-47181.jpg" alt="Image43">
+                Pre School Education
+                <img class="ImageCommon" style="height: 100px;" src="https://images01.nicepagecdn.com/page/41/18/template-41186.jpg" alt="Image44">
+                We Provide Various Services
+                <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/48/71/template-48719.jpg" alt="Image45">
+                Rock Music Festival Template
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/41/90/template-41909.jpg" alt="Image46">
+                Gold Fashion Accessories
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/64/42/template-64424.jpg" alt="Image47">
+                Restaurant Healthy Menu
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/42/32/template-42321.jpg" alt="Image48">
+                Recent Projects Portfolio
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/69/27/template-69273.jpg" alt="Image49">
+                Ideal Design For You Template
+                <img class="IamgeCommon" src="https://images01.nicepagecdn.com/page/39/54/template-395447.jpg" alt="Image50">
+                I Am A Brand Consultant
+                <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/47/76/template-47761.jpg" alt="Image51">
+                Make It Simple
+                <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/29/81/template-2981857.jpg" alt="Image52">
+                Berlin Running Club Template
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/54/44/template-54445.jpg" alt="Image53">
+                Fire Department
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/54/25/template-54250.jpg" alt="Image54">
+                Minimalist Home Office
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/24/16/template-241633.jpg" alt="Image55">
+                Make Learning Fun
+                    <div id="body4">
+                <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/69/27/template-69277.jpg" alt="Image56">
+                World Photography
+                <div class="design"><pre><h1> 
+
+    Free WebSite 
+  Builder Software</h1>
+                                
+                                
+                                
+       <span id="span1" style="background-color: purple;font-size: 30px; border-radius: 3px;"> <a href="#" style="color: white;">Download</a>  <span></pre></div>
+    <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/10/56/template-1056714.jpg" alt="Image57">
+    Traveling The Seas
+    <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/89/08/template-890846.jpg" alt="Image58">
+    Nature Tours
+    <img class="ImageCommon" style="height: 180px;" src="https://images01.nicepagecdn.com/page/52/58/template-52588.jpg" alt="Image59">
+    Techno Progress
+    <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/52/08/template-520811.jpg" alt="Image60">
+    Strategy And Consulting
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/10/45/template-104537.jpg" alt="Iamge61">
+    Fitness Trainer
+    <img class="ImageCommon"  style="height: 180px;" src="https://images01.nicepagecdn.com/page/11/11/template-111155.jpg" alt="Image62">
+    Landscape And Nature
+    <img class="ImageCommon"  style="height: 180px;"  src="https://images01.nicepagecdn.com/page/48/63/template-48635.jpg" alt="Image63">
+    Find Your Home
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/30/70/template-307070.jpg" alt="Image64">
+    Solving The Toughest Legal Challenges
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/10/76/template-107620.jpg" alt="Image65">
+    The World Of Digital Creativity
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/71/32/template-71322.jpg" alt="Image66">
+    Building The Future
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/41/89/template-41896.jpg" alt="Image67">
+    Whimsical Design
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/58/51/template-58513.jpg" alt="Image68">
+    Dark Interior Style
+    <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/43/71/template-43716.jpg" alt="Image69">
+    Travel Work Clients
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/21/41/template-214195.jpg" alt="Image70">
+    Design Project From Scratch
+    <img class="ImageCommon" src="https://images01.nicepagecdn.com/page/71/84/template-71841.jpg" alt="Image71">
+    Free Street Fashion Template
+    <img class="ImageCommon" style="height: 100px;" src="https://images01.nicepagecdn.com/page/41/66/template-41669.jpg" alt="Image72">
+    Health And Wellness
+    <img class="ImageCommon" style="height: 200px;" src="https://images01.nicepagecdn.com/page/26/25/template-2625083.jpg" alt="Image73">
+    Travel Together
+                    </div>
+                 </div>
+          </div>
+        </div>
+       </div>
+<!-- <div class="next">
+<h1 id="next"> Next>> </h1>
+</div> -->
+   <center> <h1>Pouplar Template Categories</h1></center> 
+<div class="Endimage">
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/82/54/template-82540.jpg" alt="img1"></a>
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/23/33/template-23330.jpg" alt="img2"></a>
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/23/73/template-23732.jpg" alt="img3"></a>
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/48/82/template-48825.jpg" alt="img4"></a>
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/25/39/template-25392.jpg" alt="img5"></a>
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/23/29/template-23291.jpg" alt="img6"></a>
+ <a href="#"><img class="scroll" src="https://images01.nicepagecdn.com/page/19/53/template-19530.jpg" alt="img7"></a>
+
+</div>
+    <div class="footer">
+            <center><h1>Wide Website Templates</h1></center>
+            <p>The <b>Wide Website Templates</b> are suitable for a landing page, business website, or even a portfolio website. These responsive web design templates are thanks to their blue website design. 
+                They (especially free modern premium moodle bootstrap templates) use a layout with a responsive website design. Explore popular categories of website page templates, including slideshow homepage, login page, premium WordPress themes plugins,
+                 coming soon pages, gradient style pages, Bootstrap HTML5 template elements, Porto responsive HTML5 template, fully responsive HTML multipurpose one page layouts, responsive html5 website template graphic editor,
+                 fully responsive html5 template with latest web design effects, the full width of the browser window, one page website template with drag & drop page builder, light and dark skins with the best web hosting, PHP contact form,
+                 online store templates, portfolio website template, the best website WordPress theme, the best website free WordPress themes, templates downloaded over million people, and so on.
+
+                A wide free website template has an easy configuration achieved through the website builder (for one-page convenience is page builder), and there is also customer support. Wide HTML website templates
+                have a nice look with the best website templates, find it easy to work with such website designs. Like free website HTML templates wide WordPress themes looks what is called ''expensive'', also the authors
+                mention that it is made very carefully - so-called ''pixel precision''. Download business WordPress themes, top page css3 website templates with elementor and HTML variant page builder, which allows edit 
+                templates, html5 modern one page responsive mockup templates, landing page templates, landing page responsive HTML marketing and Limitless responsive web templates, popular HTML templates, so you can
+                create a powerful website. The design of a responsive multipurpose bootstrap HTML website template is decorated in the appropriate style, but the functionality is very rich. Download responsive web
+                mockup, design web pages, free WordPress themes, app landing page template with modern web design, and get the html5 creative fully responsive template. Find on Nicepage a modern portfolio template,
+                one page portfolio template, multipurpose HTML5 template, real estate website multi-purpose HTML5 template, a multipurpose responsive template great for WordPress theme development.
+                
+                The WordPress plugins allow customization of a wide page template. Adapt a wide responsive template for your company or make separate landing pages for each specialist. The WPBakery constructor is supposed to be
+                 used for multi-purpose WordPress theme. A free working ajax contact form combined with a comfortable neutral design. You can make sure visitors stay on your website with a free responsive mockup website template. 
+                 A way to make sure potential clients is to create a responsive website mockup design. If you want to know how do we determine the width of the file, or how we edit responsive mockup design, visit Nicepage.
+                  WordPress, html5, WordPress, these website templates can immediately make an impression on the viewer of the site. The idea of creating a website mockup is great, as a responsive WordPress theme looks very good.</p>
+    </div>
+    <div class="semiend">
+          <div class="child1">
+            <h3>Company</h3>
+            <a href="#" class="sublist1" style="color: white;">FAQ</a>
+            <a href="#" class="sublist1" style="color: white;">Terms of Use</a>
+            <a href="#" class="sublist1" style="color: white;">Privacy Policy</a>
+            <a href="#" class="sublist1" style="color: white;">License Agreement</a>
+            <a href="#" class="sublist1" style="color: white;">About Us</a>
+            <a href="#" class="sublist1" style="color: white;">Partners</a>
+            <a href="#" class="sublist1" style="color: white;">Abuse</a>
+            <a href="#" class="sublist1" style="color: white;">Contact Support</a>
+     
+            <div class="child2">
+                <h3>Product</h3>
+                <a href="#" class="sublist2" style="color: white;">Download</a>
+                <a href="#" class="sublist2" style="color: white;">400+ Features</a>
+                <a href="#" class="sublist2" style="color: white;">Review</a>
+                <a href="#" class="sublist2" style="color: white;">Affiliates</a>
+                <a href="#" class="sublist2" style="color: white;">Documentation</a>
+                <a href="#" class="sublist2" style="color: white;">Forum</a>
+                <a href="#" class="sublist2" style="color: white;">Blog</a>
+        
+                <div class="child3">
+                    <h3>NICEPAGE</h3>
+                    <a href="#" class="sublist3" style="color: white;">Website Builder</a>
+                    <a href="#" class="sublist3" style="color: white;">HTML Website Builder</a>
+                    <a href="#" class="sublist3" style="color: white;">WordPress Website Builder</a>
+                    <a href="#" class="sublist3" style="color: white;">Joomla Page Builder</a>
+                    <a href="#" class="sublist3" style="color: white;">WYSIWYG HTML Editor</a>
+                    <a href="#" class="sublist3" style="color: white;">Static Site Generator</a>
+                    <a href="#" class="sublist3" style="color: white;">HTML Code Generator</a>
+            
+                    <div class="child4">
+                        <h3>THEMES & TEMPLATES</h3>
+                        <a href="#" class="sublist4" style="color: white;">Website Templates</a>
+                        <a href="#" class="sublist4" style="color: white;">WordPress Themes</a>
+                        <a href="#" class="sublist4" style="color: white;">HTML Templates</a>
+                        <a href="#" class="sublist4" style="color: white;">Joomla Templates</a>
+                        <a href="#" class="sublist4" style="color: white;">WooCommerce Themes</a>
+                        <a href="#" class="sublist4" style="color: white;">HTML5 Templates</a>
+                        <a href="#" class="sublist4" style="color: white;">One Page Templates</a>
+        
+                    <div class="child5">
+                        <h3>WEB DESIGN</h3>
+                        <a href="#" class="sublist5" style="color: white;">Website Designs</a>
+                        <a href="#" class="sublist5" style="color: white;">Web Page Designs</a>
+                        <a href="#" class="sublist5" style="color: white;">Web Design</a>
+                        <a href="#" class="sublist5" style="color: white;">Web Page Designer</a>
+                        <a href="#" class="sublist5" style="color: white;">Landing Pages</a>
+                        <a href="#" class="sublist5" style="color: white;">Homepage Designs</a>
+                        <a href="#" class="sublist5" style="color: white;">Website Mockup</a>
+                    </div>
+</div>
+</div>
+</div>
+    </div> 
+    <div class="end">
+        <pre id="icons"> <img src="facebook.png" alt="" style="height: 30px;width: 30px;margin: -12px;">&nbsp&nbspFacebook&nbsp&nbsp<img src="twitter.png" alt="" style="height: 30px;width: 30px;margin: -12px;">&nbsp&nbspTwitter&nbsp&nbsp<img src="youtube.png" alt="" style="height: 30px;width: 30px;margin: -12px;">&nbsp&nbspYouTube&nbsp&nbsp<img src="pinterest.png" alt="" style="height: 30px;width: 30px;margin: -12px;">&nbsp&nbspPinterest&nbsp&nbsp </pre>
+        <p id="copyright"> &#169; 2023 Nicepage Free Website Builder Software - All Rights Reserved </p> 
+        <em>P.Madhura</em>
+    </div>
+</body>
+</html>
